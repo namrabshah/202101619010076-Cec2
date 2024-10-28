@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Mobile</title>
+</head>
+<body>
+    <form action="/mobile/edit" method="post">
+        <input type="hidden" name="id" th:value="${mobile.id}">
+        <p>Brand: <input type="text" name="brand" th:value="${mobile.brand}"></p>
+        <p>Model: <input type="text" name="model" th:value="${mobile.model}"></p>
+        <p>Price: <input type="text" name="price" th:value="${mobile.price}"></p>
+        <button type="submit">Edit Mobile</button>
+    </form>
+</body>
+</html>
